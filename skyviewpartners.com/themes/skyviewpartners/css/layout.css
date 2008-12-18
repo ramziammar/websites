@@ -76,7 +76,7 @@ body { text-align: center; background: #8290a8 url(../images/fill.gif) repeat-y 
 .main-pages #sidebar-products { background: url(../images/m-sidebar-filler2.gif); }
 .main-pages .content { background-image: none; }
 .main-pages .content-topbar { background-image: none; }
-.main-pages .context { padding: 20px 50px 20px 20px; }
+.main-pages .context { padding: 20px 50px 20px 10px; }
 .main-pages .sidebar-links { background: url(../images/m-sidebar-filler3.gif); padding-right: 20px; }
 .main-pages #footer-separator { background: url(../images/m-sidebar-separator3.gif) no-repeat; }
 .main-pages #footer-separator a { color: black; }
