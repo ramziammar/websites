@@ -1,0 +1,377 @@
+#left form.actionparams {
+	background: #ccc;
+	padding: 3px 5px;
+}
+#left form.actionparams input,
+#left form.actionparams select {
+	padding: 1px;
+}
+#left form.actionparams select,
+#PageType,
+#ReportSelector_holder select {
+	width: 75%;
+}
+#PageType,
+#ReportSelector_holder select {
+	float: left;
+	margin-right: 3px;
+}
+#left form.actionparms input.action {
+	width: 5%;
+}
+
+#deletepage_options p {
+	margin: 4px 0;
+	font-size: 11px;
+	color: #666;
+}
+
+/**
+ * Selection Groups
+ */
+#left .SelectionGroup {
+	display: block;
+}
+#left .SelectionGroup li {
+	list-style-type: none;
+	clear: left;
+	border: 1px solid #ccc;
+}
+#left .SelectionGroup li input {
+	width: 20px;
+	float: left;
+}
+#left .SelectionGroup li div.field {
+	display: none;
+	font-size: 1em;
+}
+#left .SelectionGroup li label {
+	margin: 0 0 0 2px;
+	display: block;
+	height: 1.2em;
+	width: auto;
+	float: none;
+}	
+#left .SelectionGroup li.selected div.field {
+	margin-left: 23px;
+	display: block;
+	margin-bottom: 1em;
+}	
+#left div.field select {
+	width: 100%;
+}
+#left .SelectionGroup li.selected label.selector {
+	font-weight: bold;
+}
+
+
+ul.tree span.a {
+	cursor: pointer;
+}
+.filefolderhover span.a, 
+ul.tree span.a.over {
+	background-color: #FFFFBB !important;
+	/* these push the highlight out to the left of the window */
+	margin-left: -100px;
+	padding-left: 100px;
+	background-position: 100px 50%;
+}
+
+
+ul.tree span.a.current {
+	font-weight: bold;
+	background-color: #EEEEFF !important;
+	border-top: 1px #CCCCFF solid;
+	border-bottom: 1px #CCCCFF solid;	
+	/* these push the highlight out to the left of the window */
+	margin-left: -100px;
+	padding-left: 100px;
+	background-position: 100px 50%;
+	/*position: relative;*/
+}
+
+ul.tree span.a.loading span.b span.c a {
+	background-image: url(../images/network-save.gif) !important;
+	margin-left: -3px;
+	padding-left: 21px;
+	background-position : 2px 2px;
+}
+
+ul.tree.multiselect span.a span.b a {
+	background-image: url(../images/tickbox-unticked.gif) !important;
+}
+
+ul.tree.multiselect span.a.nodelete span.b a {
+	background-image: url(../images/tickbox-canttick.gif) !important;
+}
+
+
+ul.tree.multiselect span.a.selected span.b span.c a {
+	background-image: url(../images/tickbox-ticked.gif) !important;
+}
+
+ul.tree.multiselect li.selected ul span.a a {
+	background-image: url(../images/tickbox-greyticked.gif) !important;
+}
+
+/* Span-B: Plus/Minus icon */
+ul.tree.multiselect li.selected span.a.children span.b, 
+ul.tree.multiselect li.selected span.a.unexpanded span.b {
+	background-image: none;
+	cursor: default;
+}
+
+ul.tree span.a a.disabled {
+	color: #999;
+	cursor: pointer;
+}
+	ul.tree span.a a.disabled * {
+		padding: 0;
+		background: none;
+		color: #999;
+		cursor: pointer;
+	}
+	
+
+ul.tree .deleted {
+	color: red;
+	text-decoration: line-through;
+}
+
+#publication_key {
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding: 3px;
+	text-align: center;
+	font-weight: bold;
+}
+	#publication_key ins,
+	#publication_key del,
+	#publication_key span {
+		margin: 0 5px;
+		font-weight: normal;
+	}
+
+/* Created on stage, never published */
+ul.tree ins,
+#publication_key ins {
+	color: orange;
+	text-decoration : none;
+}
+/* Deleted on stage */
+ul.tree del,
+#publication_key del {
+	color: red;
+}
+ul.tree span.modified,
+#publication_key span.modified {
+	color: green;
+	text-decoration : none;
+}
+
+#left {
+	background-color: #eee;
+}
+
+#treepanes {
+	background-color: #fff;
+}
+#treepanes h2 {
+	cursor: pointer;
+}
+
+#treepanes h2 img {
+	float:right;
+	margin-right: 2px;
+}
+
+.listpane p {
+	margin: 3px 3px 7px 3px;
+	font-size: 10px;
+}
+.listpane ul {
+	margin: 0;
+	padding: 0;
+}
+.listpane ul li {
+	list-style-type: none;
+	padding: 5px 2px 5px 2px;
+	font-size: 10px;
+	border-bottom: 1px #CCC dotted;
+	background-color: #FFF;
+}
+.listpane ul li.odd {
+	background-color: #EEE;
+}
+
+.listpane ul li .extra {
+	font-style: italic;
+	color: #666;
+}
+.listpane div.unitBody {
+	overflow: auto;
+	width: 100%;
+}
+
+
+#treepanes .pane_actions {
+	margin: 7px 4px;
+}
+
+#treepanes .pane_actions a {
+	margin: 4px;
+	padding: 3px;
+	background-color: #EEE;
+	border: 1px #CCC solid;
+}
+#treepanes .pane_actions a.current {
+	background-color: #CCC;
+}
+
+
+#treepanes table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#treepanes table thead td {
+	background-color: #aaa;
+	color: #fff;
+	border-bottom: 2px #ccc solid;
+}
+
+#treepanes table tbody tr {
+	cursor: pointer;
+}
+
+#treepanes table tbody td {
+	font-size: 11px;
+}
+
+#treepanes table tbody tr.odd td {
+	background-color: #EEE;
+}
+#treepanes table tbody tr.over td {
+	background-color: #FFFFBB;
+}
+
+#treepanes table tbody tr.current td {
+	background-color: #BBBBFF;
+}
+
+
+#treepanes #Versions tbody tr.internal {
+	color: #777;
+}
+#treepanes #Versions tbody tr.published {
+	color: black;
+}
+
+/**
+ * Change the styling of the root tree node
+ */
+ul.tree span.a.Root, 
+ul.tree span.a.last.Root, 
+ul.tree span.a.children.Root {
+	background-image: none;
+}
+ul.tree span.a.Root span.c, 
+ul.tree span.a.last.Root span.c, 
+ul.tree span.a.children.Root span.c {
+	margin: 0;
+}
+ul#sitetree.tree ul {
+	margin-left: 0;
+}
+ul#sitetree.tree ul ul {
+	margin-left: 16px;
+}
+
+
+/* This applies to both the LHS context menu and the TinyMCE context menu */
+.contextMenu {
+	z-index: 1000;
+	background-color: white;
+	border: 1px #CCC solid;
+}
+
+ul.contextMenu {	
+	padding: 0;
+	margin: 0;
+}
+ul.contextMenu li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.contextMenu li a {
+	display: block;
+	font-family: Tahoma, Verdana, Arial, Helvetica;
+	font-size: 11px;
+	padding: 5px 10px 5px 5px;
+	color: black;
+	text-decoration: none;
+}
+ul.contextMenu li a:hover {
+	background-color: #B6BDD2;
+	text-decoration: none;
+}
+
+ul.tree li.untranslated a:link, 
+ul.tree li.untranslated a:hover, 
+ul.tree li.untranslated a:visited {
+	color: #ccc
+}
+
+#left form.actionparams div.SearchCriteria {
+	width: 40%;
+	overflow: hidden;
+	float: left;
+}
+
+#left form.actionparams input.SearchCriteria {
+	width: 41%;
+	float: left;
+}
+#left form.actionparams #InputSiteTreeFilterDate .calendar {
+	margin-left: -100px;
+}
+/* IE7 fix: */
+#left form.actionparams #InputSiteTreeFilterDate table {
+	width: 70%;
+}
+
+#right ins * {
+	background-color: green;
+}
+
+#right del *{
+	background-color: red;
+}
+
+#sitetree a.contents {
+	font-style: italic;	
+}
+
+
+/**
+ * i18n
+ */
+#LangSelector_holder {
+	float: none;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+}
+#LangSelector_holder select {
+	width: 70%;
+}
+#LangSelector_holder.onelang {
+	display: none;
+}
+
+#SortItems {
+	border-bottom: 1px solid #cccccc;
+	background: #CCCCCC none repeat scroll 0%;
+	padding: 3px 0 3px 7px;
+}

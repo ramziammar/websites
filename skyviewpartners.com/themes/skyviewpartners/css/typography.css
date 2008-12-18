@@ -1,0 +1,13 @@
+body, div, td, p {
+	font-family: 'Verdana', 'Lucida Grande', Tahoma, Arial, Sans-serif;
+	font-size: 11px;
+}
+
+.green { color: #71a13a; }
+
+.sidebar .slogan { text-transform: uppercase; font-size: 9px; }
+#sidebar-products { color: white; }
+#sidebar-products-title, #sidebar-products, .sidebar-products-item { font-size: 14px; letter-spacing: -0.1em; }
+.sidebar-products-item { font-size: 12px; }
+.sidebar-links .sidebar-links-title { text-transform: uppercase; font-size: 14px; }
+.sidebar-links-item { color: #71a13a; font-weight: bold; font-size: 11px; letter-spacing: -1px;}

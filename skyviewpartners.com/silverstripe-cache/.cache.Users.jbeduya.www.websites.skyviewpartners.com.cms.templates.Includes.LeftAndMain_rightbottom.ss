@@ -1,0 +1,4 @@
+<?php $val .= <<<SSVIEWER
+
+SSVIEWER;
+ ?>

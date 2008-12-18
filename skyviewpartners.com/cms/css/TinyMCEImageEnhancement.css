@@ -1,0 +1,20 @@
+.group {
+    display: inline;
+    margin-left: 2px;
+}
+.middleColumn {
+    margin-bottom: 2px;	
+}
+.link {
+    text-decoration: none;
+    margin-left: 2px;
+} 
+
+
+.tree_holder {
+    display: inline;
+}
+#NewFolderName {
+    width: 120px;
+    margin-top: 0;	
+}
