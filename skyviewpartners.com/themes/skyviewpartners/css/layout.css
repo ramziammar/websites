@@ -1,5 +1,6 @@
 body, form { margin: 0; }
 body { text-align: center; background: #8290a8 url(../images/fill.gif) repeat-y 50%; }
+img { border: 0; }
 #container { width: 890px; margin: 0 auto; text-align: center; }
 
 .center { text-align: center; }

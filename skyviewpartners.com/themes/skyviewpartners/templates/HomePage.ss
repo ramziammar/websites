@@ -26,7 +26,7 @@
 </head>
 
 <body>
-	<div id="container" class="main-pages">
+	<div id="container">
 		<table border="0" cellspacing="0" cellpadding="0" width="100%">
 			<tr>
 				<!-- SIDEBAR -->
@@ -37,7 +37,7 @@
 						<b>Leaders</b> in Policy Compliance Software and Services
 					</div>
 					
-					<img src="$ThemeDir/images/m-sidebar-separator.gif" /><br />
+					<img src="$ThemeDir/images/sidebar-separator.gif" /><br />
 					
 					<div id="sidebar-products">
 						<div id="sidebar-products-title">SkyView Products</div>
@@ -47,7 +47,7 @@
 						<div class="sidebar-products-item">Complimentary Products</div>
 					</div>
 					
-					<img src="$ThemeDir/images/m-sidebar-separator2.gif" /><br />
+					<img src="$ThemeDir/images/sidebar-separator2.gif" /><br />
 					
 					<% include SidebarMenu %>
 					
@@ -64,8 +64,39 @@
 						</div>
 					</div>
 					
-					<div class="context">
-						$Layout
+					<div class="content-ads">
+						<div class="content-ads-title">
+							Policy Minder <br /> Saves Time Resulting in <br /> a Measurable ROI
+						</div>
+						
+						<div class="content-ads-quote">
+							
+							<div class="content-ads-quote-icon"><img src="$ThemeDir/images/icon-pm.png" /></div>
+							
+							When you factor the complicated and costly task of maintaining
+							and providing compliance, SkyView Policy Minder for i5/os and
+							IBM i is the only security policy compliance management tool
+							that equates to a measurable ROI in actual time saved. <a href="#">READ MORE>></a>
+						</div>
+					</div>
+					
+					<div class="content-feedback">
+						<div class="content-feedback-text">
+							<div class="content-feedback-open">
+								<div class="content-feedback-close">
+									The level of detail covered by Policy Minder is impressive. The ability to check
+									compliance is great, but the fact that you can, for example, create a template
+									for user profile settings and see who has more authority than they should, or
+									create a library and file policy template and see whether these files are secured
+									appropriately, or discover newly created profiles, libraries and files, makes this a
+									tool that you quickly begin to rely on from a systems management point of view.
+								</div>
+								<div class="content-feedback-author">
+									- Brian Hole Manager, iSeries Technology <br />
+									Les Schwab Tire Company
+								</div>
+							</div>
+						</div>
 					</div>
 				</td>
 			</tr>
