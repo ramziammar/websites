@@ -8,11 +8,11 @@ SSVIEWER;
 
 	  	
 SSVIEWER;
- if($item->hasValue("Level",array("2"))) {  ;
+ if($item->hasValue("Level",array("1"))) {  ;
  $val .= <<<SSVIEWER
 
 	<div id="Breadcrumbs">
-	   	<p>Home / 
+	   	<p>Home » 
 SSVIEWER;
 $val .=  $item->XML_val("Breadcrumbs",null,true) ;
  $val .= <<<SSVIEWER

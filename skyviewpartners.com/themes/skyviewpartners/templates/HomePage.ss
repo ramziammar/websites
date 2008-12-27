@@ -6,8 +6,6 @@
 	
 	<link rel="stylesheet" href="$ThemeDir/css/extjs.css" type="text/css" charset="utf-8">
 	<link rel="stylesheet" href="http://extjs.com/deploy/dev/resources/css/core.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="$ThemeDir/css/layout.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" href="$ThemeDir/css/typography.css" type="text/css" charset="utf-8">
 	
 	<!--[if IE 6]>
 		<style type="text/css">
@@ -66,38 +64,31 @@
 					
 					<div class="content-ads">
 						<div class="content-ads-title">
-							Policy Minder <br /> Saves Time Resulting in <br /> a Measurable ROI
+							$Header
 						</div>
 						
 						<div class="content-ads-quote">
-							
-							<div class="content-ads-quote-icon"><img src="$ThemeDir/images/icon-pm.png" /></div>
-							
-							When you factor the complicated and costly task of maintaining
-							and providing compliance, SkyView Policy Minder for i5/os and
-							IBM i is the only security policy compliance management tool
-							that equates to a measurable ROI in actual time saved. <a href="#">READ MORE>></a>
+							<div class="content-ads-quote-icon">$IconImage</div>
+							$Message
 						</div>
 					</div>
 					
-					<div class="content-feedback">
+					<div class="content-feedback" id="testimony-holder">
 						<div class="content-feedback-text">
 							<div class="content-feedback-open">
-								<div class="content-feedback-close">
-									The level of detail covered by Policy Minder is impressive. The ability to check
-									compliance is great, but the fact that you can, for example, create a template
-									for user profile settings and see who has more authority than they should, or
-									create a library and file policy template and see whether these files are secured
-									appropriately, or discover newly created profiles, libraries and files, makes this a
-									tool that you quickly begin to rely on from a systems management point of view.
-								</div>
-								<div class="content-feedback-author">
-									- Brian Hole Manager, iSeries Technology <br />
-									Les Schwab Tire Company
-								</div>
+								<div class="content-feedback-close" id="testimony-message">&nbsp;</div>
+								<div class="content-feedback-author" id="testimony-author">&nbsp;</div>
 							</div>
 						</div>
 					</div>
+					
+					<div id="temp-testimony-holder">
+						<% control testimonies %>
+							<span class="testimony-message-temp">$Message</span>
+							<span class="testimony-author-temp">&mdash; $Author <br />$Company</span>
+						<% end_control %>
+					</div>
+					
 				</td>
 			</tr>
 		</table>

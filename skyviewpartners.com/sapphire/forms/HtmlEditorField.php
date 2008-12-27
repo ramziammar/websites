@@ -282,10 +282,23 @@ class HtmlEditorField_Toolbar extends ViewableData {
 			new HtmlEditorField_button("JustifyRight","justifyright",_t('HtmlEditorField.BUTTONALIGNRIGHT',"Align right")),
 			new HtmlEditorField_button("JustifyFull","justifyfull",_t('HtmlEditorField.BUTTONALIGNJUSTIFY',"Justify")),
 			
-			/*new HtmlEditorField_dropdown("mceSetCSSClass", "styleSelect", array(
-				"mceContentBody" => "mceContentBody",
-			)),*/
+			new HtmlEditorField_dropdown("mceSetCSSClass", "styleSelect", array(
+				//"mceContentBody" => "mceContentBody",
+				'none' => 'none',
+				'align-right' => 'align-right',
+				'align-left' => 'align-left',
+				'align-top' => 'align-top',
+				'align-bottom' => 'align-bottom',
+				'align-center' => 'align-center',
+				'align-middle' => 'align-middle',
+				'align-justify' => 'align-justify',
+				'color-blue' => 'color-blue',
+				'content-header' => 'content-header',
+				'content-blue' => 'content-blue',
+				'content-text' => 'content-text'
+			)),
 			new HtmlEditorField_dropdown("FormatBlock", "formatSelect", array(
+				"<span>" => _t('HtmlEditorField.FORMATSPAN', "Span", PR_MEDIUM, '<span> tag'),
 				"<p>" => _t('HtmlEditorField.FORMATP', "Paragraph", PR_MEDIUM, '<p> tag'),
 				"<address>" => _t('HtmlEditorField.FORMATADDR', "Address", PR_MEDIUM, '<address> tag'),
 				"<pre>" => "Preformatted",_t('HtmlEditorField.FORMATADDR', "Address", PR_MEDIUM, '<address> tag'),

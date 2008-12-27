@@ -6,8 +6,6 @@
 	
 	<link rel="stylesheet" href="$ThemeDir/css/extjs.css" type="text/css" charset="utf-8">
 	<link rel="stylesheet" href="http://extjs.com/deploy/dev/resources/css/core.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="$ThemeDir/css/layout.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" href="$ThemeDir/css/typography.css" type="text/css" charset="utf-8">
 	
 	<!--[if IE 6]>
 		<style type="text/css">

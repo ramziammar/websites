@@ -19,16 +19,6 @@ $val .=  $item->XML_val("ThemeDir",null,true) ;
  $val .= <<<SSVIEWER
 /css/extjs.css" type="text/css" charset="utf-8">
 	<link rel="stylesheet" href="http://extjs.com/deploy/dev/resources/css/core.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="
-SSVIEWER;
-$val .=  $item->XML_val("ThemeDir",null,true) ;
- $val .= <<<SSVIEWER
-/css/layout.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" href="
-SSVIEWER;
-$val .=  $item->XML_val("ThemeDir",null,true) ;
- $val .= <<<SSVIEWER
-/css/typography.css" type="text/css" charset="utf-8">
 	
 	<!--[if IE 6]>
 		<style type="text/css">
@@ -60,11 +50,11 @@ $val .=  $item->XML_val("ThemeDir",null,true) ;
 			<tr>
 				<!-- SIDEBAR -->
 				<td class="sidebar" id="sidebar">
-					<div class="logo"><img src="
+					<div class="logo"><a href="home"><img src="
 SSVIEWER;
 $val .=  $item->XML_val("ThemeDir",null,true) ;
  $val .= <<<SSVIEWER
-/images/logo.gif" /></div>
+/images/logo.gif" /></a></div>
 					
 					<div class="slogan">
 						<b>Leaders</b> in Policy Compliance Software and Services

@@ -45,7 +45,10 @@ $_CLASS_MANIFEST = array (
   'PageComment' => '/Users/jbeduya/www/websites/skyviewpartners.com/cms/code/sitefeatures/PageComment.php',
   'PageCommentInterface' => '/Users/jbeduya/www/websites/skyviewpartners.com/cms/code/sitefeatures/PageCommentInterface.php',
   'SSAkismet' => '/Users/jbeduya/www/websites/skyviewpartners.com/cms/code/sitefeatures/SSAkismet.php',
+  'HomePage' => '/Users/jbeduya/www/websites/skyviewpartners.com/mysite/code/HomePage.php',
   'Page' => '/Users/jbeduya/www/websites/skyviewpartners.com/mysite/code/Page.php',
+  'TestimonyHolder' => '/Users/jbeduya/www/websites/skyviewpartners.com/mysite/code/TestimonyHolder.php',
+  'TestimonyPage' => '/Users/jbeduya/www/websites/skyviewpartners.com/mysite/code/TestimonyPage.php',
   'RSSFeed' => '/Users/jbeduya/www/websites/skyviewpartners.com/sapphire/api/RSSFeed.php',
   'RestfulService' => '/Users/jbeduya/www/websites/skyviewpartners.com/sapphire/api/RestfulService.php',
   'SapphireSoapServer' => '/Users/jbeduya/www/websites/skyviewpartners.com/sapphire/api/SapphireSoapServer.php',
@@ -780,6 +783,16 @@ $_TEMPLATE_MANIFEST = array (
       ),
     ),
   ),
+  'HomePage' => 
+  array (
+    'themes' => 
+    array (
+      'skyviewpartners' => 
+      array (
+        'main' => '/Users/jbeduya/www/websites/skyviewpartners.com/themes/skyviewpartners/templates/HomePage.ss',
+      ),
+    ),
+  ),
   'Sidebar' => 
   array (
     'themes' => 
@@ -883,6 +896,10 @@ $_CSS_MANIFEST = array (
       'blackcandy' => 'themes/blackcandy/css/typography.css',
       'skyviewpartners' => 'themes/skyviewpartners/css/typography.css',
     ),
+  ),
+  'homepage' => 
+  array (
+    'unthemed' => 'mysite/css/homepage.css',
   ),
   'CalendarDateField' => 
   array (
@@ -1491,6 +1508,22 @@ $_ALL_CLASSES = array (
     array (
       'Akismet' => 'Akismet',
     ),
+    'HomePage' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'DataObject' => 'DataObject',
+      'SiteTree' => 'SiteTree',
+      'Page' => 'Page',
+    ),
+    'HomePage_Controller' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'Controller' => 'Controller',
+      'ContentController' => 'ContentController',
+      'Page_Controller' => 'Page_Controller',
+    ),
     'Page' => 
     array (
       'Object' => 'Object',
@@ -1504,6 +1537,38 @@ $_ALL_CLASSES = array (
       'ViewableData' => 'ViewableData',
       'Controller' => 'Controller',
       'ContentController' => 'ContentController',
+    ),
+    'TestimonyHolder' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'DataObject' => 'DataObject',
+      'SiteTree' => 'SiteTree',
+      'Page' => 'Page',
+    ),
+    'TestimonyHolder_Controller' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'Controller' => 'Controller',
+      'ContentController' => 'ContentController',
+      'Page_Controller' => 'Page_Controller',
+    ),
+    'TestimonyPage' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'DataObject' => 'DataObject',
+      'SiteTree' => 'SiteTree',
+      'Page' => 'Page',
+    ),
+    'TestimonyPage_Controller' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'Controller' => 'Controller',
+      'ContentController' => 'ContentController',
+      'Page_Controller' => 'Page_Controller',
     ),
     'RSSFeed' => 
     array (
@@ -3785,6 +3850,9 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
+      'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+      'TestimonyPage_Controller' => 'TestimonyPage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -3906,6 +3974,9 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
+      'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+      'TestimonyPage_Controller' => 'TestimonyPage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -3938,6 +4009,9 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
+      'TestimonyHolder' => 'TestimonyHolder',
+      'TestimonyPage' => 'TestimonyPage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4390,6 +4464,9 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
+      'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+      'TestimonyPage_Controller' => 'TestimonyPage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -4422,6 +4499,9 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
+      'TestimonyHolder' => 'TestimonyHolder',
+      'TestimonyPage' => 'TestimonyPage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4640,6 +4720,9 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
+      'TestimonyHolder' => 'TestimonyHolder',
+      'TestimonyPage' => 'TestimonyPage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4699,6 +4782,9 @@ $_ALL_CLASSES = array (
     array (
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
+      'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+      'TestimonyPage_Controller' => 'TestimonyPage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -4709,6 +4795,9 @@ $_ALL_CLASSES = array (
     'Page' => 
     array (
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
+      'TestimonyHolder' => 'TestimonyHolder',
+      'TestimonyPage' => 'TestimonyPage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4726,6 +4815,9 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
+      'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+      'TestimonyPage_Controller' => 'TestimonyPage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -4742,6 +4834,9 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
+      'TestimonyHolder' => 'TestimonyHolder',
+      'TestimonyPage' => 'TestimonyPage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -5351,8 +5446,14 @@ $_ALL_CLASSES = array (
       'PageCommentInterface_Form' => 'PageCommentInterface_Form',
       'PageCommentInterface_Controller' => 'PageCommentInterface_Controller',
       'SSAkismet' => 'SSAkismet',
+      'HomePage' => 'HomePage',
+      'HomePage_Controller' => 'HomePage_Controller',
       'Page' => 'Page',
       'Page_Controller' => 'Page_Controller',
+      'TestimonyHolder' => 'TestimonyHolder',
+      'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+      'TestimonyPage' => 'TestimonyPage',
+      'TestimonyPage_Controller' => 'TestimonyPage_Controller',
       'RSSFeed' => 'RSSFeed',
       'RSSFeed_Entry' => 'RSSFeed_Entry',
       'RestfulService' => 'RestfulService',
@@ -5796,8 +5897,14 @@ $_ALL_CLASSES = array (
     'PageCommentInterface_Form' => 'PageCommentInterface_Form',
     'PageCommentInterface_Controller' => 'PageCommentInterface_Controller',
     'SSAkismet' => 'SSAkismet',
+    'HomePage' => 'HomePage',
+    'HomePage_Controller' => 'HomePage_Controller',
     'Page' => 'Page',
     'Page_Controller' => 'Page_Controller',
+    'TestimonyHolder' => 'TestimonyHolder',
+    'TestimonyHolder_Controller' => 'TestimonyHolder_Controller',
+    'TestimonyPage' => 'TestimonyPage',
+    'TestimonyPage_Controller' => 'TestimonyPage_Controller',
     'RSSFeed' => 'RSSFeed',
     'RSSFeed_Entry' => 'RSSFeed_Entry',
     'RestfulService' => 'RestfulService',
@@ -6324,6 +6431,8 @@ $_ALL_CLASSES = array (
     'SubscribeForm' => 'SubscribeForm',
     'UserDefinedForm' => 'UserDefinedForm',
     'PageComment' => 'PageComment',
+    'HomePage' => 'HomePage',
+    'TestimonyPage' => 'TestimonyPage',
     'Email_BounceRecord' => 'Email_BounceRecord',
     'Email_BlackList' => 'Email_BlackList',
     'ErrorPage' => 'ErrorPage',

@@ -11,3 +11,34 @@ body, div, td, p {
 .sidebar-products-item { font-size: 12px; }
 .sidebar-links .sidebar-links-title { text-transform: uppercase; font-size: 14px; }
 .sidebar-links-item { color: #71a13a; font-weight: bold; font-size: 11px; letter-spacing: -1px;}
+
+.typography, .typography p, .typography td {
+	font-family: Verdana, 'Lucida Grande', Tahoma;
+	color: #36302c;
+	font-size: 12px;
+}
+
+.typography p.bold { font-weight: bold; }
+
+.typography h2 { font-family: Verdana, 'Lucida Grande', Tahoma; color: #71a13a; font-size: 18px; font-weight: normal; }
+.typography a { color: #568c45; text-decoration: none; }
+
+body.mceContentBody p, .content p {
+	font-family: 'Verdana', 'Lucida Grande', Tahoma, Arial, Sans-serif;
+	font-size: 11px;
+	color: #36302c;
+	padding: 5px 0;
+}
+body.mceContentBody p.content-header, body p.content-header { 
+	padding-top: 10px;
+	color: #71a13a; 
+	font-size: 18px; margin-bottom: 20px; 
+}
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.align-justify { text-align: justify;}
+.align-middle { text-align: middle; }
+.align-center { text-align: center; }
+.align-top { vertical-align: top; }
+.align-bottom { vertical-align: bottom; }
+.color-blue { color: #639bc4;}
