@@ -37,13 +37,7 @@
 					
 					<img src="$ThemeDir/images/m-sidebar-separator.gif" /><br />
 					
-					<div id="sidebar-products">
-						<div id="sidebar-products-title">SkyView Products</div>
-						
-						<div class="sidebar-products-item"><a href="products-policy-minder">Policy Minder</a></div>
-						<div class="sidebar-products-item">Risk Assessor</div>
-						<div class="sidebar-products-item">Complimentary Products</div>
-					</div>
+					<% include SidebarProducts %>
 					
 					<img src="$ThemeDir/images/m-sidebar-separator2.gif" /><br />
 					
@@ -82,37 +76,8 @@
 			</div>
 		</div>
 		
+		<% include FlyoutMenu %>
 		
-		<div id="Products-menu" class="flyout-menu" style="display: none;">
-			<a href="products-policy-minder">Policy Minder</a> <br />
-			<a href="#">Risk Assessor</a> <br />
-			<a href="#">Policy Minder Real Time</a>
-		</div>
-		
-		<div id="Services-menu" class="flyout-menu" style="display: none;">
-			<a href="#">Security Check-up</a> <br />
-			<a href="#">Remediation Services</a>
-		</div>
-		
-		<div id="Downloads-menu" class="flyout-menu" style="display: none;">
-			<a href="#">Login</a> <br />
-			<a href="#">Download Registration</a>
-		</div>
-		
-		<div id="Support-menu" class="flyout-menu" style="display: none;">
-			<a href="#">Login &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-		</div>
-		
-		<div id="Information-menu" class="flyout-menu" style="display: none;">
-			<a href="#">Security Information</a> <br />
-			<a href="#">Laws and Regulations</a>
-		</div>
-		
-		<div id="About Us-menu" class="flyout-menu" style="display: none;">
-			<a href="#">Business Partners</a> <br />
-			<a href="#">Mission Statement</a> <br />
-			<a href="#">Privacy Policy</a>
-		</div>
 	</div>
 <body
 </html>

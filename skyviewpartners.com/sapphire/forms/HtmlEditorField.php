@@ -295,7 +295,8 @@ class HtmlEditorField_Toolbar extends ViewableData {
 				'color-blue' => 'color-blue',
 				'content-header' => 'content-header',
 				'content-blue' => 'content-blue',
-				'content-text' => 'content-text'
+				'content-text' => 'content-text',
+				'topic-title' => 'topic-title'
 			)),
 			new HtmlEditorField_dropdown("FormatBlock", "formatSelect", array(
 				"<span>" => _t('HtmlEditorField.FORMATSPAN', "Span", PR_MEDIUM, '<span> tag'),

@@ -23,16 +23,29 @@ body, div, td, p {
 .typography h2 { font-family: Verdana, 'Lucida Grande', Tahoma; color: #71a13a; font-size: 18px; font-weight: normal; }
 .typography a { color: #568c45; text-decoration: none; }
 
-body.mceContentBody p, .content p {
-	font-family: 'Verdana', 'Lucida Grande', Tahoma, Arial, Sans-serif;
-	font-size: 11px;
+body.mceContentBody p, .content p, .content li {
+	font-family: Verdana, 'Lucida Grande', Tahoma, Arial, Sans-serif;
+	font-size: 12px;
 	color: #36302c;
 	padding: 5px 0;
 }
+
+body.mceContentBody p.topic-title, body.mceContentBody span.topic-title, 
+body p.topic-title, body span.topic-title {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+body.mceContentBody .typography a, body .typography a { color: #568c45; text-decoration: none; }
+
 body.mceContentBody p.content-header, body p.content-header { 
 	padding-top: 10px;
 	color: #71a13a; 
 	font-size: 18px; margin-bottom: 20px; 
+}
+.content li {
+	list-style-type: square;
+	margin-left: 20px;
 }
 .align-right { text-align: right; }
 .align-left { text-align: left; }
@@ -41,4 +54,4 @@ body.mceContentBody p.content-header, body p.content-header {
 .align-center { text-align: center; }
 .align-top { vertical-align: top; }
 .align-bottom { vertical-align: bottom; }
-.color-blue { color: #639bc4;}
+.color-blue { color: #639bc4; }

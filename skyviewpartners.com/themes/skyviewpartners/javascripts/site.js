@@ -74,10 +74,11 @@ Ext.onReady(function() {
 	
 	function alignHdToSidebar() {
 		var el = Ext.get('hd');
+		var offset = 50;
 		if (Ext.select('.main-pages').elements.length > 0) {
-			el.alignTo('sidebar', 'tr?', [-13, 50]);
+			el.alignTo('sidebar', 'tr?', [-13, offset]);
 		} else {
-			el.alignTo('sidebar', 'tr?', [0, 50]);
+			el.alignTo('sidebar', 'tr?', [0, offset]);
 		}
 	}
 
