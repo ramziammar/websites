@@ -25,6 +25,7 @@
 	<% include MenuHeader %>
 	
 	<div id="middle">
+	<% if FlashUrl %>
 		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="975" height="316" id="home-slideshow" align="middle">
 			<param name="allowFullScreen" value="false" />
 			<param name="movie" value="$FlashUrl" />
@@ -34,6 +35,11 @@
 			<param name="wmode" value="transparent" />	
 			<embed src="$FlashUrl" quality="high" loop="true" bgcolor="#ffffff" wmode="transparent" width="975" height="316" name="home-slideshow" align="middle" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
 		</object>
+	
+	
+	<% else %>
+		<img src="$ThemeDir/images/temp.gif" width="975" height="316" />
+	<% end_if %>
 	</div>
 	
 	<% include Bottom %>
