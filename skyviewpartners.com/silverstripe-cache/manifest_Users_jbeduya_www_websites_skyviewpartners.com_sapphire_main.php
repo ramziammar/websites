@@ -793,6 +793,16 @@ $_TEMPLATE_MANIFEST = array (
       ),
     ),
   ),
+  'FlyoutMenu' => 
+  array (
+    'themes' => 
+    array (
+      'skyviewpartners' => 
+      array (
+        'Includes' => '/Users/jbeduya/www/websites/skyviewpartners.com/themes/skyviewpartners/templates/Includes/FlyoutMenu.ss',
+      ),
+    ),
+  ),
   'Sidebar' => 
   array (
     'themes' => 
@@ -810,6 +820,16 @@ $_TEMPLATE_MANIFEST = array (
       'skyviewpartners' => 
       array (
         'Includes' => '/Users/jbeduya/www/websites/skyviewpartners.com/themes/skyviewpartners/templates/Includes/SidebarMenu.ss',
+      ),
+    ),
+  ),
+  'SidebarProducts' => 
+  array (
+    'themes' => 
+    array (
+      'skyviewpartners' => 
+      array (
+        'Includes' => '/Users/jbeduya/www/websites/skyviewpartners.com/themes/skyviewpartners/templates/Includes/SidebarProducts.ss',
       ),
     ),
   ),

@@ -7,6 +7,9 @@ Ext.onReady(function() {
 
 	function createMenu(name){
 		var el = Ext.get(name+'-link');
+		if (!el) {
+			return;
+		}
 		var tid = 0, menu, doc = Ext.getDoc();
 		
 		var handleOver = function(e, t){
@@ -74,7 +77,7 @@ Ext.onReady(function() {
 	
 	function alignHdToSidebar() {
 		var el = Ext.get('hd');
-		var offset = 50;
+		var offset = 0;
 		if (Ext.select('.main-pages').elements.length > 0) {
 			el.alignTo('sidebar', 'tr?', [-13, offset]);
 		} else {
@@ -88,7 +91,7 @@ Ext.onReady(function() {
 	createMenu('Support');
 	createMenu('Information');
 	createMenu('About Us');
-	alignHdToSidebar();
+//	alignHdToSidebar();
 //	createMenu('support');
 //	createMenu('store');
 });

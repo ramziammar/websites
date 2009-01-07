@@ -14,19 +14,19 @@ class SubscribeForm extends UserDefinedForm {
 	static $add_action = "a newsletter subscription form";
 
     static $required_fields = array(
-      'Email address' => 'EditableEmailField(CustomParameter=Email,CanDelete=0)',
-      'First name' => 'EditableTextField(CustomParameter=FirstName)',
-      'Last name' => 'EditableTextField(CustomParameter=Surname)',
-      'Address' => 'EditableTextField(Rows=3,CustomParameter=Address)',
-      'Job title' => 'EditableTextField(CustomParameter=JobTitle)',
-      'Organisation' => 'EditableTextField(CustomParameter=Organisation)',
-      'Mail format' => 'EditableRadioField(Options=1:HTML,Options=0:Text__only,CustomParameter=HTMLEmail)'
+		'Email address' => 'EditableEmailField(CustomParameter=Email,CanDelete=0)',
+		'First name' => 'EditableTextField(CustomParameter=FirstName)',
+		'Last name' => 'EditableTextField(CustomParameter=Surname)',
+		'Address' => 'EditableTextField(Rows=3,CustomParameter=Address)',
+		'Job title' => 'EditableTextField(CustomParameter=JobTitle)',
+		'Organisation' => 'EditableTextField(CustomParameter=Organisation)',
+		'Mail format' => 'EditableRadioField(Options=1:HTML,Options=0:Text__only,CustomParameter=HTMLEmail)'
     );
     
     static $db = array(
-      'Subscribe' => 'Boolean',
-      'AllNewsletters' => 'Boolean',
-      'Subject' => 'Varchar'
+		'Subscribe' => 'Boolean',
+		'AllNewsletters' => 'Boolean',
+		'Subject' => 'Varchar'
     );
 
 	static $defaults = array(
@@ -34,7 +34,7 @@ class SubscribeForm extends UserDefinedForm {
 	);
     
     static $has_many = array(
-      'Newsletters' => 'NewsletterType'
+		'Newsletters' => 'NewsletterType'
     );
     
     function __construct( $data = null, $isSingleton = false ) {
@@ -252,9 +252,14 @@ class SubscribeForm_Controller extends UserDefinedForm_Controller {
 				return $custom->renderWith('Page');  
     }
     
+    /**
+     * Returns an instance of Form Object.
+     *
+     * @return Form
+     */
     function Form() {
         $form = parent::Form();
-        
+        /*@var $form Form */
         if( $this->AllNewsletters )
             $newsletterList = DataObject::get('NewsletterType');
         else

@@ -85,3 +85,5 @@ img { border: 0; }
 
 .main-pages #hd { background: url(../images/menu-bg.gif) repeat-x 10px -5px; padding-bottom: 12px; }
 .main-pages #hd-holder { background: url(../images/menu-corner.gif) no-repeat bottom left; padding-bottom: 4px; }
+
+#hd { position: relative; top: 35px; left: -22px;}

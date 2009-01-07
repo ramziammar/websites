@@ -1,0 +1,27 @@
+#right form .calendardate, .calendardate {
+	position: relative;
+}
+#right form .calendardate input, .calendardate input {
+	width: 8em;
+}
+
+.calendardate .calendar table {
+	width: 200px;
+}
+
+.calendardate img {
+	position: relative;
+	top: 2px;
+	cursor: pointer;
+}
+
+.calendarpopup {
+	position: absolute;
+	left: 13.6em;
+	top: -0.15em;
+	display: none;
+	z-index: 2;
+}
+.calendarpopup.focused {
+	display: block;
+}

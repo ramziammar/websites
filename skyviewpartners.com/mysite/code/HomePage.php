@@ -35,5 +35,9 @@ class HomePage extends Page {
 class HomePage_Controller extends Page_Controller {
 	function init() {
 		parent::init();
+		Requirements::themedCSS("layout");
+		Requirements::themedCSS("typography");
+		Requirements::themedCSS("form");
+		Requirements::themedCSS("homepage");
 	}
 }
