@@ -1,0 +1,25 @@
+#container { width: 975px; }
+#header, #middle, #bottom, #footer { width: 875px; text-align: left; }
+#header, #bottom, #footer { margin-left: 50px; }
+
+#middle { background: none; }
+
+.bottom-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+.bottom-items td {
+	font-size: 10px;
+	font-style: italic;
+	color: white;
+	text-align: center;
+}
+
+#footer #footer-text {
+	color: #392e10;
+	font-size: 9px;
+	font-weight: bold;
+	padding: 5px 0 0 20px;
+}

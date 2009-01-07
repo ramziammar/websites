@@ -1,0 +1,6 @@
+body, td, p, div, th, li, span{
+	font-family: 'Lucida Grande', Verdana, Tahoma, Arial;
+	font-size: 12px;
+}
+
+img { border: 0; }

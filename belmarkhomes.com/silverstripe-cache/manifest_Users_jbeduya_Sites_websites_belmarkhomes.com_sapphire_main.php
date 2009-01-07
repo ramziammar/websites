@@ -45,6 +45,7 @@ $_CLASS_MANIFEST = array (
   'PageComment' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/cms/code/sitefeatures/PageComment.php',
   'PageCommentInterface' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/cms/code/sitefeatures/PageCommentInterface.php',
   'SSAkismet' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/cms/code/sitefeatures/SSAkismet.php',
+  'HomePage' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/mysite/code/HomePage.php',
   'Page' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/mysite/code/Page.php',
   'RSSFeed' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/sapphire/api/RSSFeed.php',
   'RestfulService' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/sapphire/api/RestfulService.php',
@@ -712,6 +713,61 @@ $_TEMPLATE_MANIFEST = array (
   array (
     'email' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/sapphire/templates/email/GenericEmail.ss',
   ),
+  'HomePage' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 
+      array (
+        'main' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/belmarkhomes/templates/HomePage.ss',
+      ),
+    ),
+  ),
+  'Bottom' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 
+      array (
+        'Includes' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/belmarkhomes/templates/Includes/Bottom.ss',
+      ),
+    ),
+  ),
+  'HomePageFooter' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 
+      array (
+        'Includes' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/belmarkhomes/templates/Includes/HomePageFooter.ss',
+      ),
+    ),
+  ),
+  'MenuHeader' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 
+      array (
+        'Includes' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/belmarkhomes/templates/Includes/MenuHeader.ss',
+      ),
+    ),
+  ),
+  'Page' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 
+      array (
+        'main' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/belmarkhomes/templates/Page.ss',
+      ),
+      'blackcandy' => 
+      array (
+        'Layout' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/blackcandy/templates/Layout/Page.ss',
+        'main' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/blackcandy/templates/Page.ss',
+      ),
+    ),
+  ),
   'BreadCrumbs' => 
   array (
     'themes' => 
@@ -749,17 +805,6 @@ $_TEMPLATE_MANIFEST = array (
       'blackcandy' => 
       array (
         'Includes' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/blackcandy/templates/Includes/SideBar.ss',
-      ),
-    ),
-  ),
-  'Page' => 
-  array (
-    'themes' => 
-    array (
-      'blackcandy' => 
-      array (
-        'Layout' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/blackcandy/templates/Layout/Page.ss',
-        'main' => '/Users/jbeduya/Sites/websites/belmarkhomes.com/themes/blackcandy/templates/Page.ss',
       ),
     ),
   ),
@@ -834,6 +879,7 @@ $_CSS_MANIFEST = array (
     'unthemed' => 'cms/css/layout.css',
     'themes' => 
     array (
+      'belmarkhomes' => 'themes/belmarkhomes/css/layout.css',
       'blackcandy' => 'themes/blackcandy/css/layout.css',
     ),
   ),
@@ -842,6 +888,7 @@ $_CSS_MANIFEST = array (
     'unthemed' => 'cms/css/typography.css',
     'themes' => 
     array (
+      'belmarkhomes' => 'themes/belmarkhomes/css/typography.css',
       'blackcandy' => 'themes/blackcandy/css/typography.css',
     ),
   ),
@@ -921,6 +968,29 @@ $_CSS_MANIFEST = array (
   array (
     'unthemed' => 'sapphire/css/UnitTesting.css',
   ),
+  'HomePage' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 'themes/belmarkhomes/css/HomePage.css',
+    ),
+  ),
+  'ie6' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 'themes/belmarkhomes/css/ie6.css',
+      'blackcandy' => 'themes/blackcandy/css/ie6.css',
+    ),
+  ),
+  'ie7' => 
+  array (
+    'themes' => 
+    array (
+      'belmarkhomes' => 'themes/belmarkhomes/css/ie7.css',
+      'blackcandy' => 'themes/blackcandy/css/ie7.css',
+    ),
+  ),
   'editor' => 
   array (
     'themes' => 
@@ -933,20 +1003,6 @@ $_CSS_MANIFEST = array (
     'themes' => 
     array (
       'blackcandy' => 'themes/blackcandy/css/form.css',
-    ),
-  ),
-  'ie6' => 
-  array (
-    'themes' => 
-    array (
-      'blackcandy' => 'themes/blackcandy/css/ie6.css',
-    ),
-  ),
-  'ie7' => 
-  array (
-    'themes' => 
-    array (
-      'blackcandy' => 'themes/blackcandy/css/ie7.css',
     ),
   ),
   'bbcodehelp' => 
@@ -1440,6 +1496,22 @@ $_ALL_CLASSES = array (
     'SSAkismet' => 
     array (
       'Akismet' => 'Akismet',
+    ),
+    'HomePage' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'DataObject' => 'DataObject',
+      'SiteTree' => 'SiteTree',
+      'Page' => 'Page',
+    ),
+    'HomePage_Controller' => 
+    array (
+      'Object' => 'Object',
+      'ViewableData' => 'ViewableData',
+      'Controller' => 'Controller',
+      'ContentController' => 'ContentController',
+      'Page_Controller' => 'Page_Controller',
     ),
     'Page' => 
     array (
@@ -3735,6 +3807,7 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -3856,6 +3929,7 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -3888,6 +3962,7 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4340,6 +4415,7 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -4372,6 +4448,7 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4590,6 +4667,7 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4649,6 +4727,7 @@ $_ALL_CLASSES = array (
     array (
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -4659,6 +4738,7 @@ $_ALL_CLASSES = array (
     'Page' => 
     array (
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -4676,6 +4756,7 @@ $_ALL_CLASSES = array (
       'Page_Controller' => 'Page_Controller',
       'Unsubscribe_Controller' => 'Unsubscribe_Controller',
       'UserDefinedForm_Controller' => 'UserDefinedForm_Controller',
+      'HomePage_Controller' => 'HomePage_Controller',
       'ErrorPage_Controller' => 'ErrorPage_Controller',
       'GhostPage_Controller' => 'GhostPage_Controller',
       'RedirectorPage_Controller' => 'RedirectorPage_Controller',
@@ -4692,6 +4773,7 @@ $_ALL_CLASSES = array (
       'Page' => 'Page',
       'GhostPage' => 'GhostPage',
       'UserDefinedForm' => 'UserDefinedForm',
+      'HomePage' => 'HomePage',
       'ErrorPage' => 'ErrorPage',
       'RedirectorPage' => 'RedirectorPage',
       'VirtualPage' => 'VirtualPage',
@@ -5301,6 +5383,8 @@ $_ALL_CLASSES = array (
       'PageCommentInterface_Form' => 'PageCommentInterface_Form',
       'PageCommentInterface_Controller' => 'PageCommentInterface_Controller',
       'SSAkismet' => 'SSAkismet',
+      'HomePage' => 'HomePage',
+      'HomePage_Controller' => 'HomePage_Controller',
       'Page' => 'Page',
       'Page_Controller' => 'Page_Controller',
       'RSSFeed' => 'RSSFeed',
@@ -5746,6 +5830,8 @@ $_ALL_CLASSES = array (
     'PageCommentInterface_Form' => 'PageCommentInterface_Form',
     'PageCommentInterface_Controller' => 'PageCommentInterface_Controller',
     'SSAkismet' => 'SSAkismet',
+    'HomePage' => 'HomePage',
+    'HomePage_Controller' => 'HomePage_Controller',
     'Page' => 'Page',
     'Page_Controller' => 'Page_Controller',
     'RSSFeed' => 'RSSFeed',
@@ -6274,6 +6360,7 @@ $_ALL_CLASSES = array (
     'SubscribeForm' => 'SubscribeForm',
     'UserDefinedForm' => 'UserDefinedForm',
     'PageComment' => 'PageComment',
+    'HomePage' => 'HomePage',
     'Email_BounceRecord' => 'Email_BounceRecord',
     'Email_BlackList' => 'Email_BlackList',
     'ErrorPage' => 'ErrorPage',

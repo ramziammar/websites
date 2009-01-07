@@ -18,11 +18,11 @@ $databaseConfig = array(
 // for a description of what dev mode does.
 Director::set_dev_servers(array(
 	'localhost',
-	'127.0.0.1',
+	'127.0.0.1'
 ));
 
 // This line set's the current theme. More themes can be
 // downloaded from http://www.silverstripe.com/cms-themes-and-skin
-SSViewer::set_theme('blackcandy');
+SSViewer::set_theme('belmarkhomes');
 
 ?>

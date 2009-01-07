@@ -34,7 +34,7 @@
 	  	<div class="clear"><!-- --></div>
 		
 		<div id="Layout">
-		  $Layout
+			$Layout
 		</div>
 		
 	   <div class="clear"><!-- --></div>
