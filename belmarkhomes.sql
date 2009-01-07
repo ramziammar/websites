@@ -630,7 +630,7 @@ CREATE TABLE `Group_Members` (
   PRIMARY KEY  (`ID`),
   KEY `GroupID` (`GroupID`),
   KEY `MemberID` (`MemberID`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -639,7 +639,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `Group_Members` WRITE;
 /*!40000 ALTER TABLE `Group_Members` DISABLE KEYS */;
-INSERT INTO `Group_Members` VALUES (1,1,1);
+INSERT INTO `Group_Members` VALUES (3,1,1);
 /*!40000 ALTER TABLE `Group_Members` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -769,7 +769,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `Member` WRITE;
 /*!40000 ALTER TABLE `Member` DISABLE KEYS */;
-INSERT INTO `Member` VALUES (1,'Member','2009-01-07 12:41:02','2009-01-08 02:50:42',NULL,NULL,'admin','s8yym60dq2sggccsw0o0k0g88ok4w8g',NULL,3,'2009-01-08 03:07:54',0,NULL,NULL,0,'sha1','5w0on792vugw4gscg8g8s4wwws40og0wosw4gc8',NULL,NULL);
+INSERT INTO `Member` VALUES (1,'Member','2009-01-07 12:41:02','2009-01-08 03:30:13','Junrey','Beduya','jbeduya@gmail.com','tpzs8tojym80g08c4wk44wkscck08s8',NULL,3,'2009-01-08 03:30:14',0,NULL,NULL,0,'sha1','1o5uopdh15r4co00swcwskk4gc0c004og08w0s8','en_US',NULL);
 /*!40000 ALTER TABLE `Member` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1791,4 +1791,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-01-07 19:26:08
+-- Dump completed on 2009-01-07 19:30:26
