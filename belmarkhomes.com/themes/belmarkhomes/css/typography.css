@@ -4,3 +4,39 @@ body, td, p, div, th, li, span{
 }
 
 img { border: 0; }
+
+.bottom-news .news-item-date { text-transform: uppercase; font-style: italic; font-size: 10px; }
+.bottom-news .news-item-title { text-transform: uppercase; color: #c3aa45; font-weight: bold; }
+
+#menubar div, #menubar div span {
+	font-family: Georgia, Verdana, 'Lucida Sans';
+	text-transform: uppercase;
+}
+
+#menubar { height: 40px; }
+#menubar .menubar-items { }
+
+#menubar .menubar-title { font-size: 18px; }
+#menubar .menubar-items a div { font-size: 11px; padding: 13px; }
+#menubar .menubar-items a { 
+	color: white; 
+	text-decoration: none;
+	font-weight: bold;
+	float: left;
+}
+
+#menubar .menubar-items a.current {
+	background: url(../images/menubar-item-left.gif) top left no-repeat;
+}
+
+#menubar .menubar-items a.current div { 
+	background: url(../images/menubar-item-right.gif) top right no-repeat;
+}
+
+/** Styles **/
+#content { }
+#content p, #content div, #content span { font-family: Georgia, Verdana; color: #373835;}
+#content h1 { font-family: Georgia, Verdana; color: #474331; }
+#content span.header, #content .header, .mceContentBody .header { font-family: Georgia, Arial, Verdana;  font-size: 18px; color: #373835; }
+#content .emphasized, .mceContentBody .emphasized { font-size: 12px; font-weight: bold; }
+

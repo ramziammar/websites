@@ -18,21 +18,21 @@ class NewsPage extends Page {
 	
 	public function getCmsFields() {
 		$fields = parent::getCMSFields();
+		
 		/*@var $fields FieldSet */
-		$fields->removeFieldFromTab('Root.Content.Main', 'Content');
 		$fields->removeFieldFromTab('Root.Content.Main', 'PageName');
 		$fields->removeFieldFromTab('Root.Content.Main', 'NavigationLabel');
 		
-		$fields->addFieldToTab('Root.Content.Main', new TextareaField('IntroText', 'Introduction Text'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('Author', 'Author'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('Company', 'Company'));
+		$fields->addFieldToTab('Root.Content.Main', new TextareaField('IntroText', 'Introduction Text (This will be shown on the main page)'), 'Content');
+		$fields->addFieldToTab('Root.Content.Main', new TextField('Author', 'Author'), 'IntroText');
+		$fields->addFieldToTab('Root.Content.Main', new CalendarDateField('Date', 'News Date'), 'Author');
 		
 		return $fields;
 	}
 	
 }
 
-class TestimonyPage_Controller extends Page_Controller {
+class NewsPage_Controller extends Page_Controller {
 	function init() {
 		parent::init();
 	}

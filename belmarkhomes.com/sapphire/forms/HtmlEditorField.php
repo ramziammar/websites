@@ -282,9 +282,15 @@ class HtmlEditorField_Toolbar extends ViewableData {
 			new HtmlEditorField_button("JustifyRight","justifyright",_t('HtmlEditorField.BUTTONALIGNRIGHT',"Align right")),
 			new HtmlEditorField_button("JustifyFull","justifyfull",_t('HtmlEditorField.BUTTONALIGNJUSTIFY',"Justify")),
 			
-			/*new HtmlEditorField_dropdown("mceSetCSSClass", "styleSelect", array(
+			// updated	
+			new HtmlEditorField_dropdown("mceSetCSSClass", "styleSelect", array(
 				"mceContentBody" => "mceContentBody",
-			)),*/
+				'header' => 'header',
+				'emphasized' => 'emphasized'
+			)),
+			//===================================================================
+			// end of update
+			//====================================================================
 			new HtmlEditorField_dropdown("FormatBlock", "formatSelect", array(
 				"<p>" => _t('HtmlEditorField.FORMATP', "Paragraph", PR_MEDIUM, '<p> tag'),
 				"<address>" => _t('HtmlEditorField.FORMATADDR', "Address", PR_MEDIUM, '<address> tag'),

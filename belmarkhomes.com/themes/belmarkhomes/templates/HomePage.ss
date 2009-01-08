@@ -35,8 +35,6 @@
 			<param name="wmode" value="transparent" />	
 			<embed src="$FlashUrl" quality="high" loop="true" bgcolor="#ffffff" wmode="transparent" width="975" height="316" name="home-slideshow" align="middle" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
 		</object>
-	
-	
 	<% else %>
 		<img src="$ThemeDir/images/temp.gif" width="975" height="316" />
 	<% end_if %>
@@ -45,6 +43,7 @@
 	<% include Bottom %>
 	
 	<% include HomePageFooter %>
+	
 </div>
 
 </body>

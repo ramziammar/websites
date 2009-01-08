@@ -2,7 +2,7 @@
 #header, #middle, #bottom, #footer { width: 875px; text-align: left; }
 #header, #bottom, #footer { margin-left: 50px; }
 
-#middle { background: none; }
+#middle { background: none; height: 316px; }
 
 .bottom-title {
 	text-transform: uppercase;
@@ -22,4 +22,9 @@
 	font-size: 9px;
 	font-weight: bold;
 	padding: 5px 0 0 20px;
+}
+
+#testimony-link {
+	top: 20px;
+	left: -75px;
 }
